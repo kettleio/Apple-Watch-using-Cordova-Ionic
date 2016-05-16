@@ -1,0 +1,51 @@
+<ion-view view-title="Compass">
+
+  <ion-content>
+
+    <div class="list" id="results">
+      <div class="item item-divider">
+        Location Details
+      </div>
+
+      <div class="item">
+        Distance to destination
+        <span class="item-note">
+          {{ distance }} meters
+        </span>
+      </div>
+
+      <div class="item">
+        Bearing to destination
+        <span class="item-note">
+          {{ bearing }} degrees
+        </span>
+      </div>
+
+      <div class="item">
+        Current heading
+        <span class="item-note">
+          {{heading}} 
+        </span>
+      </div>
+
+      <div class="item">
+        Difference in heading and bearing:
+        <span class="item-note">
+          {{difference}} degrees
+        </span>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">
+        Compass
+      </div>
+      <div class="item item-text-wrap arrow-container">
+        <div id="arrow" style="{{ animateRotation }}"></div>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

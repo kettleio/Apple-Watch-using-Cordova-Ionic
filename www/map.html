@@ -1,0 +1,12 @@
+<ion-view view-title="Map">
+   <ion-nav-buttons side="right">
+      <button class="button icon-right ion-compass button-clear" ng-click="openCompass()" ng-show="ifValidAddress"></button>
+   </ion-nav-buttons>
+	<ion-content scroll="false" >
+
+	  <input id="search-place" class="controls" type="text" placeholder="Search Address" ng-focus="disableTap()">
+	  <div id="map"></div>
+
+	</ion-content>
+
+</ion-view>
